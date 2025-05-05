@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Arial", sans-serif;
+    background-color: #121212;
+   color: #ffffff;
+   min-height: 100vh;
+  display: flex;
+  justify-content : center;
+  align-item: center;
+}
+.container{
+  width: 90%;
+  max-width: 1000;
+  margin: 0 auto;
+  padding: 20px;
+}
+h1{
+  color : yellow;
+   text-shadow: 0 0 10px rgba(241, 196, 15, 0.5); 
+  display : flex;
+  justify-content : center;
+  align-item : center;
+  margin-bottom: 30px;
+}
+.race-controls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-direction: column;
+  gap: 30px;
+}
+#start-race{
+  padding: 12px 30px; 
+  font-size: 18px; 
+  background-color: #e74c3c; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: all 0.3s ease;
+  box-shadow:0 4px 8px rgba(231, 76, 60, 0.3);
+}
+#start-race:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(231, 76, 60, 0.4);
+}
+#start-race:active {
+  transform: translateY(1px);
+}
+#winner-display{
+  font-size: 20px;
+  font-weight: bold;
+  color: lightgreen;
+}
+.race-track-container{
+  background-colour: #2c3e50;
+  border-radius: 10px; 
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+.race-track{
+  height: 80px; 
+  background-color: #34495e; 
+  margin-bottom: 15px;
+  border-radius: 5px; 
+  position: relative; 
+  overflow: hidden; 
+  display: flex; 
+  align-items: center; 
+}
+.lane-number{
+  position: absolute;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #f1c40f;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  z-index: 10;
+}
+.car{
+   position: absolute; 
+   left: 50px; 
+   height: 60px; 
+   display: flex;
+   align-items: center;
+   z-index:5;
+}
+.car img{
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+.finish-line{
+  height:100%;
+  position:absolute;
+  right: 50px;
+  width: 5px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #ffffff,
+    #ffffff 10px,
+    #000000 10px,
+    #000000 20px
+  ); 
+  z-index: 1;
+}
+.car-info{
+  display:flex;
+  justify-content: space-around;
+  flex:wrap;
+  gap:10px;
+}
+.car-detail {
+  display: flex; 
+  align-items: center; 
+  gap: 10px; }
+
+.car-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; 
+}
